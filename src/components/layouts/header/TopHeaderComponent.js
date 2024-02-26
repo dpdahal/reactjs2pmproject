@@ -3,7 +3,7 @@ function TopHeaderCompoent() {
     return (
         <div className="top-header">
             <div className="container">
-                <ul className="float-end d-flex">
+                <ul className="top-menu">
                     <li><Link to="/">Resources</Link></li>
                     <li><Link to="/">Simplilearn for Business</Link></li>
                     <li><Link to="/">Become an Instructor</Link></li>
@@ -11,6 +11,7 @@ function TopHeaderCompoent() {
                     <li><Link to="/">Reviews</Link></li>                  
                 </ul>
             </div>
+           
         </div>
     );
 }

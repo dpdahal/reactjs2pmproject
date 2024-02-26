@@ -1,63 +1,139 @@
+@import "colors";
 body{
     margin: 0xp;
     padding: 0px;
 }
 
-.top-header{
-    width: 100%; 
-    height: 38px;
-    background-color: #f2f2f2;  
-    
+header{
+    margin: 0px;
+    padding: 0px;
 
-    ul{
-        list-style: none;
-        display: flex;
+    .top-header{
+        width: 100%; 
         height: 38px;
-        align-items: center;
+        background-color: #f2f2f2;  
         
-
-        li{
-            padding: 0px 20px;
-            a{
-                text-decoration: none;
-                color: black;
-            }
-            :hover{
-               color: blue;
-            }
-        }
-    }
-}
-
-.header-bottom{
-    display: flex;
-    justify-content: space-between;
-    background: red;
-
-    .logo{
-        width: 20%;
-        height: 100px;
-        background: yellow;
-    }
-    .menu{
-        width: 15%;
-        height: 100px;
-        background: green;
-
+    
         ul{
-            margin: 0;
-            padding: 0;
+            list-style: none;
+            display: flex;
+            height: 38px;
+            align-items: center;
+            justify-content: flex-end;
+            
+    
+            li{
+                padding: 0px 20px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                :hover{
+                   color: blue;
+                }
+            }
         }
     }
+    
+    .header-bottom{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 62px;
+    
+        .logo{
+            width: 15%;
+    
+            img{
+                height: 45px;
+            }
+    
+        }
+        .coures-menu{
+            width: 15%;
+    
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                position: relative;
 
-    .search{
-        width: 50%;
-        height: 100px;
-        background: blue;
-    }
-    .login{
-        width: 10%;
-        height: 100px;
-        background: pink;
+                a{
+                    background: #118aef;
+                    padding: 10px;
+                    color: white;
+                    border-radius: 5px;
+                    text-decoration: none;
+
+                }
+                
+                li{
+                    line-height: 60px;
+                    text-align: center;
+                }
+
+                .mega-menu{
+                    margin: 0;
+                    padding: 0;
+                    width: 600px;
+                    height: 500px;
+                    background: gray;
+                    position: absolute;
+                    left: -100px;
+                    display: none;
+                }
+                :hover .mega-menu{
+                    display: block;
+                }
+            }
+        }
+    
+        .search{
+            width: 50%;
+
+            .search-icons {
+                position: absolute;
+                z-index: 2;
+                display: block;
+                width: 2.375rem;
+                height: 2.375rem;
+                line-height: 2.375rem;
+                text-align: center;
+                color: $primary_color;
+            }
+
+            input {
+                width: 80%;
+                height: 40px;
+                border: 1px solid $primary_color;
+                text-indent: 40px;
+                color: $primary_color;    
+            }
+    
+            ::placeholder {
+                color: $primary_color;
+            }
+    
+            input:focus {
+                outline: none;
+            }
+        }
+        .login{
+            width: 10%;
+            display: flex;
+            justify-content: flex-end;
+           
+
+            button{
+                width: 100px;
+                height: 40px;
+                background: white;
+                border: 1px solid #757778;
+                border-radius: 5px;
+                color: #757778;
+            }
+        }
     }
 }
+

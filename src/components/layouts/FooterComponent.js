@@ -1,7 +1,7 @@
 function FooterComponent() {
     return (
       <header>
-        <h1>Header</h1>
+        footer
       </header>
     );
   }

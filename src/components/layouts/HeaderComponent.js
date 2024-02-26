@@ -6,7 +6,6 @@ function HeaderComponent() {
     <header>
         <TopHeaderCompoent />
         <HeaderBottomComonent />       
-      
     </header>
   );
 }

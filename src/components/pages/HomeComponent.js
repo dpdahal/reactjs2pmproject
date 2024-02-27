@@ -1,7 +1,6 @@
 function HomeComponent() {
   return (
-    <div className="container">
-      homee page
+    <div className="banner">
     </div>
   )
 }
